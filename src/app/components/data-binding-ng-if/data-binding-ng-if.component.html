@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <input type="text" [(ngModel)]="age" />
+      <div class="messag">
+        <h1 *ngIf="age >= 18" [class.allow]="isAllow">
+          You are allow to access this site!
+        </h1>
+        <h1 *ngIf="age < 18">You are not allow to access this site!</h1>
+      </div>
+    </div>
+  </body>
+</html>
